@@ -3,3 +3,8 @@
     <button>New Contact</button>
   </p>
 {{/link-to}}
+
+<h1>Contacts</h1>
+{{#each model as contact}}
+  <h1>{{contact.fullName}}</h1>
+{{/each}}

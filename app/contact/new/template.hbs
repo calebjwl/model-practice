@@ -1,13 +1,10 @@
 <h1>New Contact</h1>
-<form {{action "submitForm" on "submit"}}>
+<form {{action "submitForm" on="submit"}}>
   <p>First Name</p>
   {{input type="text" value=formValues.firstName}}
 
   <p>Last Name</p>
   {{input type="text" value=formValues.lastName}}
-
-  <p>Birthday</p>
-  {{input type="date" value=formValues.birthday}}
 
   <p>
     <button>Submit</button>

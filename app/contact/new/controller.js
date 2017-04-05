@@ -5,7 +5,7 @@ export default Ember.Controller.extend({
 
   actions: {
     async submitForm() {
-      const contact = this.store.createRecord('contacts', this.formValues);
+      const contact = this.store.createRecord('contact', this.formValues);
 
       await contact.save()
 
