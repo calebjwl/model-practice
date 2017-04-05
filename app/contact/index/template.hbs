@@ -8,6 +8,6 @@
 {{#each model as |contact|}}
   <p>{{contact.fullName}}
   {{#link-to 'contact.edit' contact.id}}<button>Edit</button>{{/link-to}}
-  <button {{action "deleteContact" contact.id}}>Delete</button>
+  <button {{action "deleteContact" contact}}>Delete</button>
   </p>
 {{/each}}
