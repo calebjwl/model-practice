@@ -1,0 +1,15 @@
+<h1>Edit Contact</h1>
+
+{{#with (changeset model) as |changeset|}}
+  <form {{action "saveContact" changeset on="submit"}}>
+    <p>First Name</p>
+    {{input type="text" value=changeset.firstName}}
+
+    <p>Last Name</p>
+    {{input type="text" value=changeset.lastName}}
+
+    <p>
+      <button>Submit</button>
+    </p>
+  </form>
+{{/with}}

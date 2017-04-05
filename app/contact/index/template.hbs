@@ -5,6 +5,9 @@
 {{/link-to}}
 
 <h1>Contacts</h1>
-{{#each model as contact}}
-  <h1>{{contact.fullName}}</h1>
+{{#each model as |contact|}}
+  <p>{{contact.fullName}}
+  {{#link-to 'contact.edit' contact.id}}<button>Edit</button>{{/link-to}}
+  <button {{action "deleteContact" contact.id}}>Delete</button>
+  </p>
 {{/each}}
